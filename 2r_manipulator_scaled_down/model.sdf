@@ -46,6 +46,12 @@
             <size>0.3 0.05 0.05</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Torquoise</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='base_link_visual_1'>
         <pose frame=''>0 0.025 -0.0125 0 -0 0</pose>
@@ -54,6 +60,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Torquoise</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='base_link_visual_2'>
         <pose frame=''>0 0.075 -0.0125 0 -0 0</pose>
@@ -63,9 +75,15 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Torquoise</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
-    <joint name='anchor' type='revolute'>
+    <joint name='anchor' type='fixed'>
       <child>base_link</child>
       <parent>world</parent>
       <axis>
@@ -147,6 +165,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_1'>
         <pose frame=''>0 0.05 0.00625 0 -0 0</pose>
@@ -155,6 +179,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_2'>
         <pose frame=''>0 0.15 -0.00625 0 -0 0</pose>
@@ -163,6 +193,12 @@
             <size>0.05 0.2 0.05</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_3'>
         <pose frame=''>0 0.25 -0.01875 0 -0 0</pose>
@@ -171,6 +207,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_4'>
         <pose frame=''>0 0.3 -0.01875 0 -0 0</pose>
@@ -180,6 +222,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='first_joint' type='revolute'>
@@ -188,8 +236,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-0.785</lower>
-          <upper>0.785</upper>
+          <lower>-1.57</lower>
+          <upper>0.3925</upper>
           <effort>30</effort>
           <velocity>1</velocity>
         </limit>
@@ -264,6 +312,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_1'>
         <pose frame=''>0 0.05 0 0 -0 0</pose>
@@ -272,6 +326,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_2'>
         <pose frame=''>0 0.15 -0.0125 0 -0 0</pose>
@@ -280,6 +340,12 @@
             <size>0.05 0.2 0.05</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_3'>
         <pose frame=''>0 0.25 -0.025 0 -0 0</pose>
@@ -288,6 +354,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_4'>
         <pose frame=''>0 0.3 -0.025 0 -0 0</pose>
@@ -297,6 +369,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='second_joint' type='revolute'>
@@ -305,8 +383,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-0.785</lower>
-          <upper>0.785</upper>
+          <lower>-0.3925</lower>
+          <upper>0.3925</upper>
           <effort>30</effort>
           <velocity>1</velocity>
         </limit>
@@ -348,6 +426,12 @@
             <radius>0.0125</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='handle_joint' type='revolute'>

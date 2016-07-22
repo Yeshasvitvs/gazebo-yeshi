@@ -1,0 +1,81 @@
+[WRAPPER]
+# name of the wrapper device to be instatiated by the factory
+device controlboardwrapper2
+# rate of output streaming from ports in ms
+period 10
+# output port name (a leading '/' will be added by code)
+name manipulator2r_new/body
+# Total number of joints
+joints 3
+# list of MotorControl device to use
+networks ( manipulator2r_new )
+# for each network specify the joint map
+manipulator2r_new  0 1 0 1 0 1
+# Verbose output (on if present, off if commented out)
+verbose
+
+# Specify configuration of MotorControl devices
+[manipulator2r_new]
+# name of the device to be instatiated by the factory
+device gazebo_controlboard
+#jointNames list
+jointNames joint1 joint2 joint3
+name manipulator2r_new
+
+#PIDs:
+# this information is used to set the PID values in simulation for GAZEBO, we need only the first three values
+
+#[POSITION_CONTROL]
+#controlUnits 	metric_units
+#controlLaw 	joint_pid_gazebo_v1
+#kp 		100.0 100.0 20.0 20.0 20.0
+#kd 		0.1   0.1   0.1  0.1  0.1
+#ki 		0.1   0.1   0.1  0.1  0.1
+#maxInt 		9999  9999  9999 9999 9999
+#maxOut  	9999  9999  9999 9999 9999
+#shift 		0     0     0    0    0
+#ko 		0     0     0    0    0
+#stictionUp 	0     0     0    0    0
+#stictionDown 	0     0     0    0    0
+
+#[VELOCITY_CONTROL]
+#controlUnits 	metric_units
+#controlLaw 	joint_pid_gazebo_v1
+#kp 		20.0 20.0 20.0 20.0 20.0
+#kd 		0.0  0.0   0.0  0.0  0.0
+#ki 		0.01   0.01   0.01  0.01  0.01
+#maxInt 		9999  9999  9999 9999 9999
+#maxOut  	9999  9999  9999 9999 9999
+#shift 		0     0     0    0    0
+#ko 		0     0     0    0    0
+#stictionUp 	0     0     0    0    0
+#stictionDown 	0     0     0    0    0
+
+#[IMPEDANCE_CONTROL]
+#controlUnits 	metric_units
+#controlLaw 	joint_pid_gazebo_v1
+#stiffness 	0.0     0.0     0.0    0.0    0.0
+#damping 	0.0     0.0     0.0    0.0    0.0
+
+[GAZEBO_PIDS]
+#manipulator2r_new
+Pid0 400.0 2.0 20.0 9999 9999 9 9
+Pid1 400.0 2.0 20.0 9999 9999 9 9
+Pid2 400.0 2.0 20.0 9999 9999 9 9
+
+[GAZEBO_VELOCITY_PIDS]
+#manipulator2r_new
+Pid0 5.0 2.0 0.1 9999 9999 9 9
+Pid1 5.0 2.0 0.1 9999 9999 9 9
+Pid2 5.0 2.0 0.1 9999 9999 9 9
+
+#Limits:
+[GAZEBO_LIMITS]
+Max  29.0  59.0  54.0
+Min -39.0 -69.0 -54.0
+
+#Impedance PIDs
+[GAZEBO_IMPEDANCE_POSITION_PIDS]
+Pid0 P 500 I 0 D 1
+Pid1 P 500 I 0 D 1
+Pid2 P 500 I 0 D 1

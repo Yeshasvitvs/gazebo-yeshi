@@ -355,7 +355,7 @@
   <axis xyz="0 0 1" />
   <calibration rising="1"/>
   <dynamic damping="0.0" friction="0.0"/>
-  <limit effort="30" lower="-${angle/4}" upper="${angle/4}" velocity="1.0"/>
+  <limit effort="30" lower="-${angle/2}" upper="${angle/8}" velocity="1.0"/>
   <safety_controller k_velocity="10" k_position="15" soft_lower_limit="-1.5" soft_upper_limit="1.5"/>
 </joint>
 
@@ -366,7 +366,7 @@
   <axis xyz="0 0 1" />
   <calibration rising="1"/>
   <dynamic damping="0.0" friction="0.0"/>
-  <limit effort="30" lower="-${angle/4}" upper="${angle/4}" velocity="1.0"/>
+  <limit effort="30" lower="-${angle/8}" upper="${angle/8}" velocity="1.0"/>
   <safety_controller k_velocity="10" k_position="15" soft_lower_limit="-1.5" soft_upper_limit="1.5"/>
 </joint>
 

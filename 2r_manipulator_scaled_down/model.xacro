@@ -381,4 +381,10 @@
   <safety_controller k_velocity="10" k_position="15" soft_lower_limit="-1.5" soft_upper_limit="1.5"/>
 </joint>
 
+<!--Gazebo Yarp Plugin-->
+<!--plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
+       <yarpConfigurationFile>model://manipulator2r/conf/gazebo_controlboard.ini</yarpConfigurationFile>
+       <initialConfiguration>0.0 0.0</initialConfiguration>
+     </plugin-->
+
 </robot>

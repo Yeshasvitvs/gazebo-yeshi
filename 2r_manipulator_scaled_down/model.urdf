@@ -80,13 +80,13 @@
   <!--First Link-->
   <link name="first_link">
     <inertial>
-      <origin rpy="0 0 0" xyz="0 0.1375 -0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0.1375 0"/>
       <mass value="1"/>
       <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>
     <!--First Link Small Cylinder - Front -->
     <visual>
-      <origin rpy="0 0 0.785" xyz="0 0 0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0 0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
         <material name="white">
@@ -95,14 +95,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0.785" xyz="0 0 0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0 0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
       </geometry>
     </collision>
     <!--First Link Small Box - Front -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.05 0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0.05 0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
         <material name="white">
@@ -111,14 +111,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.05 0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0.05 0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
       </geometry>
     </collision>
     <!--First Link Box-->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.15 -0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0.15 0"/>
       <geometry>
         <box size="0.05 0.2 0.05"/>
         <material name="white">
@@ -127,14 +127,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.15 -0.00625"/>
+      <origin rpy="0 0 0" xyz="0 0.15 0"/>
       <geometry>
         <box size="0.05 0.2 0.05"/>
       </geometry>
     </collision>
     <!--First Link Small Box - Back -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.25 -0.01875"/>
+      <origin rpy="0 0 0" xyz="0 0.25 -0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
         <material name="white">
@@ -143,14 +143,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.25 -0.01875"/>
+      <origin rpy="0 0 0" xyz="0 0.25 -0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
       </geometry>
     </collision>
     <!--First Link Small Cylinder - Back -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.3 -0.01875"/>
+      <origin rpy="0 0 0" xyz="0 0.3 -0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
         <material name="white">
@@ -159,7 +159,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.3 -0.01875"/>
+      <origin rpy="0 0 0" xyz="0 0.3 -0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
       </geometry>
@@ -168,13 +168,13 @@
   <!--Second Link -->
   <link name="second_link">
     <inertial>
-      <origin rpy="0 0 0" xyz="0 0.1375 -0.0125"/>
+      <origin rpy="0 0 0" xyz="0 0.1375 0"/>
       <mass value="1"/>
       <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
     </inertial>
     <!--Second Link Small Cylinder - Front -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
         <material name="white">
@@ -183,14 +183,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
       </geometry>
     </collision>
     <!--Second Link Small Box - Front -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.05 0"/>
+      <origin rpy="0 0 0" xyz="0 0.05 0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
         <material name="white">
@@ -199,14 +199,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.05 0"/>
+      <origin rpy="0 0 0" xyz="0 0.05 0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
       </geometry>
     </collision>
     <!--Second Link Box-->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.15 -0.0125"/>
+      <origin rpy="0 0 0" xyz="0 0.15 0"/>
       <geometry>
         <box size="0.05 0.2 0.05"/>
         <material name="white">
@@ -215,14 +215,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.15 -0.0125"/>
+      <origin rpy="0 0 0" xyz="0 0.15 0"/>
       <geometry>
         <box size="0.05 0.2 0.05"/>
       </geometry>
     </collision>
     <!--Second Link Small Box - Back -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.25 -0.025"/>
+      <origin rpy="0 0 0" xyz="0 0.25 -0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
         <material name="white">
@@ -231,14 +231,14 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.25 -0.025"/>
+      <origin rpy="0 0 0" xyz="0 0.25 -0.0125"/>
       <geometry>
         <box size="0.05 0.1 0.025"/>
       </geometry>
     </collision>
     <!--Second Link Small Cylinder - Back -->
     <visual>
-      <origin rpy="0 0 0" xyz="0 0.3 -0.025"/>
+      <origin rpy="0 0 0" xyz="0 0.3 -0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
         <material name="white">
@@ -247,7 +247,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0.3 -0.025"/>
+      <origin rpy="0 0 0" xyz="0 0.3 -0.0125"/>
       <geometry>
         <cylinder length="0.025" radius="0.025"/>
       </geometry>
@@ -286,17 +286,17 @@
   <joint name="first_joint" type="revolute">
     <parent link="base_link"/>
     <child link="first_link"/>
-    <origin rpy="0 0 0.785" xyz="0 0.075 0.00625"/>
+    <origin rpy="0 0 0.3925" xyz="0 0.075 0"/>
     <axis xyz="0 0 1"/>
     <calibration rising="1"/>
     <dynamic damping="0.0" friction="0.0"/>
-    <limit effort="30" lower="-1.57" upper="0.3925" velocity="1.0"/>
+    <limit effort="30" lower="-0.785" upper="0" velocity="1.0"/>
     <safety_controller k_position="15" k_velocity="10" soft_lower_limit="-1.5" soft_upper_limit="1.5"/>
   </joint>
   <joint name="second_joint" type="revolute">
     <parent link="first_link"/>
     <child link="second_link"/>
-    <origin rpy="0 0 -1.57" xyz="0 0.3 0.00625"/>
+    <origin rpy="0 0 -0.3925" xyz="0 0.3 0"/>
     <axis xyz="0 0 1"/>
     <calibration rising="1"/>
     <dynamic damping="0.0" friction="0.0"/>
@@ -306,17 +306,25 @@
   <joint name="handle_joint" type="revolute">
     <parent link="second_link"/>
     <child link="handle_link"/>
-    <origin rpy="0 0 0" xyz="0 0.3 -0.00625"/>
+    <origin rpy="0 0 0" xyz="0 0.3 0"/>
     <axis xyz="0 0 1"/>
     <calibration rising="1"/>
     <dynamic damping="0.0" friction="0.0"/>
     <limit effort="30" lower="-3.14" upper="3.14" velocity="1.0"/>
     <safety_controller k_position="15" k_velocity="10" soft_lower_limit="-1.5" soft_upper_limit="1.5"/>
+    <!--sensor name='left_leg_ft' type='force_torque'>
+    <always_on>1</always_on>
+    <update_rate>100</update_rate>
+    <pose>0 0 0 0 0 0</pose>
+    <plugin name='handle_ft' filename='libgazebo_yarp_forcetorque.so'>
+      <yarpConfigurationFile>model://icub/conf/FT/gazebo_forcetorque.ini</yarpConfigurationFile>
+    </plugin>
+  </sensor-->
   </joint>
-  <!--This is for Gazebo Yarp Plugin-->
+  <!--Gazebo Yarp Plugin-->
   <!--plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
-       <yarpConfigurationFile>model://manipulator2r/conf/gazebo_controlboard.ini</yarpConfigurationFile>
-       <initialConfiguration>0.0 0.0</initialConfiguration>
-     </plugin-->
+  <yarpConfigurationFile>model://2r_manipulator_scaled_down/conf/gazebo_controlboard.ini</yarpConfigurationFile>
+  <initialConfiguration>0.0 0.0</initialConfiguration>
+</plugin-->
 </robot>
 

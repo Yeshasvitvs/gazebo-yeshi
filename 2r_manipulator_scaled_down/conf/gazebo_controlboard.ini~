@@ -28,7 +28,7 @@ verbose
 # name of the device to be instatiated by the factory
 device gazebo_controlboard
 #jointNames list
-jointNames first_joint second_joint handle_joint
+jointNames joint1 joint2 joint3
 name 2r_manipulator_scaled_down
 
 #PIDs:
@@ -69,9 +69,9 @@ damping 	0.0     0.0     0.0
 
 
 #[LIMITS]
-#jntPosMax  50.0  30.0  70.0
-#jntPosMin -50.0 -30.0 -20.0
-#jntVelMax 100.0 100.0 100.0
+#jntPosMax  50.0  30.0  70.0  
+#jntPosMin -50.0 -30.0 -20.0 
+#jntVelMax 100.0 100.0 100.0 
 
 #Limits:
 #[GAZEBO_LIMITS]

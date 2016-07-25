@@ -1,5 +1,6 @@
 <sdf version='1.6'>
   <model name='2r_manipulator_scaled_down'>
+    <static>false</static>
     <link name='base_link'>
       <pose frame=''>0 0 0.55 0 -0 0</pose>
       <inertial>
@@ -46,6 +47,12 @@
             <size>0.3 0.05 0.05</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='base_link_visual_1'>
         <pose frame=''>0 0.025 -0.0125 0 -0 0</pose>
@@ -54,6 +61,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='base_link_visual_2'>
         <pose frame=''>0 0.075 -0.0125 0 -0 0</pose>
@@ -63,9 +76,15 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
-    <joint name='anchor' type='revolute'>
+    <joint name='anchor' type='fixed'>
       <child>base_link</child>
       <parent>world</parent>
       <axis>
@@ -147,6 +166,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_1'>
         <pose frame=''>0 0.05 0.0125 0 -0 0</pose>
@@ -155,6 +180,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_2'>
         <pose frame=''>0 0.15 0 0 -0 0</pose>
@@ -163,6 +194,12 @@
             <size>0.05 0.2 0.05</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_3'>
         <pose frame=''>0 0.25 -0.0125 0 -0 0</pose>
@@ -171,6 +208,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='first_link_visual_4'>
         <pose frame=''>0 0.3 -0.0125 0 -0 0</pose>
@@ -180,6 +223,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Yellow</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='first_joint' type='revolute'>
@@ -264,6 +313,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_1'>
         <pose frame=''>0 0.05 0.0125 0 -0 0</pose>
@@ -272,6 +327,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_2'>
         <pose frame=''>0 0.15 0 0 -0 0</pose>
@@ -280,6 +341,12 @@
             <size>0.05 0.2 0.05</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_3'>
         <pose frame=''>0 0.25 -0.0125 0 -0 0</pose>
@@ -288,6 +355,12 @@
             <size>0.05 0.1 0.025</size>
           </box>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='second_link_visual_4'>
         <pose frame=''>0 0.3 -0.0125 0 -0 0</pose>
@@ -297,6 +370,12 @@
             <radius>0.025</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='second_joint' type='revolute'>
@@ -348,6 +427,12 @@
             <radius>0.0125</radius>
           </cylinder>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='handle_joint' type='revolute'>
@@ -367,6 +452,23 @@
         </dynamics>
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
+
+      <sensor name='handle_ft' type='force_torque'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin name='forcetorque' filename='libgazebo_yarp_forcetorque.so'>
+          <yarpConfigurationFile>model://2r_manipulator_scaled_down/conf/gazebo_forcetorque.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
+
     </joint>
+
+    <!--Gazebo Yarp Plugin-->
+    <plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
+      <yarpConfigurationFile>model://2r_manipulator_scaled_down/conf/gazebo_controlboard.ini</yarpConfigurationFile>
+      <initialConfiguration>0.0 0.0 0.0</initialConfiguration>
+    </plugin>
+
   </model>
 </sdf>

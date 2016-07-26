@@ -20,13 +20,15 @@
   <!--XACRO: First Link Rectangle-->
   <!--XACRO: Second Link Rectangle-->
   <!--XACRO: Handle Link Cylinder-->
+  <!--XACRO: Link Masses-->
+  <!--XACRO: Link Inertia Value-->
   <link name="world"/>
   <!--Base Link is at the Origin-->
   <link name="base_link">
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="1"/>
-      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <!--Base Link Box-->
     <visual>
@@ -82,7 +84,7 @@
     <inertial>
       <origin rpy="0 0 0" xyz="0 0.1375 0"/>
       <mass value="1"/>
-      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <!--First Link Small Cylinder - Front -->
     <visual>
@@ -170,7 +172,7 @@
     <inertial>
       <origin rpy="0 0 0" xyz="0 0.1375 0"/>
       <mass value="1"/>
-      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <!--Second Link Small Cylinder - Front -->
     <visual>
@@ -258,7 +260,7 @@
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0.0125"/>
       <mass value="1"/>
-      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0.1" iyz="0" izz="0.1"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.025"/>
@@ -312,12 +314,12 @@
     <dynamic damping="0.0" friction="0.0"/>
     <limit effort="30" lower="-3.14" upper="3.14" velocity="1.0"/>
     <safety_controller k_position="15" k_velocity="10" soft_lower_limit="-1.5" soft_upper_limit="1.5"/>
-    <!--sensor name='left_leg_ft' type='force_torque'>
+    <!--sensor name='handle_ft' type='force_torque'>
     <always_on>1</always_on>
     <update_rate>100</update_rate>
     <pose>0 0 0 0 0 0</pose>
-    <plugin name='handle_ft' filename='libgazebo_yarp_forcetorque.so'>
-      <yarpConfigurationFile>model://icub/conf/FT/gazebo_forcetorque.ini</yarpConfigurationFile>
+    <plugin name='forcetorque' filename='libgazebo_yarp_forcetorque.so'>
+      <yarpConfigurationFile>model://2r_manipulator_scaled_down/conf/gazebo_forcetorque.ini</yarpConfigurationFile>
     </plugin>
   </sensor-->
   </joint>

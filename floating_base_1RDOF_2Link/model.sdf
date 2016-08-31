@@ -6,12 +6,12 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>1</mass>
         <inertia>
-          <ixx>0.1</ixx>
+          <ixx>0.001</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.1</iyy>
+          <iyy>0.001</iyy>
           <iyz>0</iyz>
-          <izz>0.1</izz>
+          <izz>0.001</izz>
         </inertia>
       </inertial>
       <collision name='first_link_collision'>
@@ -89,12 +89,12 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <mass>1</mass>
         <inertia>
-          <ixx>0.1</ixx>
+          <ixx>0.001</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.1</iyy>
+          <iyy>0.001</iyy>
           <iyz>0</iyz>
-          <izz>0.1</izz>
+          <izz>0.001</izz>
         </inertia>
       </inertial>
       <collision name='second_link_collision'>

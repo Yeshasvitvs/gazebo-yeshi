@@ -14,6 +14,9 @@
 <!--XACRO: Axis Rotation - 180 Degree/ Pi Radians-->
 <xacro:property name="angle" value="3.14"/>
 
+<!--XACRO: Inertia Value-->
+<xacro:property name="inertia" value="0.001"/>
+
 <!--XACRO: Small Rectangle-->
 <xacro:property name="length_small_box" value="0.05"/>
 <xacro:property name="width_small_box" value="${length_small_box*2}"/>
@@ -38,13 +41,13 @@
 <xacro:property name="second_link_mass" value="1"/>
 
 <!--XACRO: Link Inertia Value-->
-<xacro:property name="first_link_inertia_xx" value="0.1"/>
-<xacro:property name="first_link_inertia_yy" value="0.1"/>
-<xacro:property name="first_link_inertia_zz" value="0.1"/>
+<xacro:property name="first_link_inertia_xx" value="${inertia}"/>
+<xacro:property name="first_link_inertia_yy" value="${inertia}"/>
+<xacro:property name="first_link_inertia_zz" value="${inertia}"/>
 
-<xacro:property name="second_link_inertia_xx" value="0.1"/>
-<xacro:property name="second_link_inertia_yy" value="0.1"/>
-<xacro:property name="second_link_inertia_zz" value="0.1"/>
+<xacro:property name="second_link_inertia_xx" value="${inertia}"/>
+<xacro:property name="second_link_inertia_yy" value="${inertia}"/>
+<xacro:property name="second_link_inertia_zz" value="${inertia}"/>
 
 <link name="world" />
 
@@ -52,7 +55,7 @@
 <link name="first_link">
 
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 ${radius_small_cylinder*3/2+length_small_box*3/2+length_link1_box/2} 0" rpy="0 0 0"/>
     <mass value="${first_link_mass}" />
     <inertia ixx="${first_link_inertia_xx}" iyy="${first_link_inertia_yy}" izz="${first_link_inertia_zz}" ixy="0" ixz="0" iyz="0" />
   </inertial>
@@ -117,7 +120,7 @@
 <link name="second_link">
 
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 ${radius_small_cylinder*3/2+length_small_box*3/2+length_link2_box/2} 0" rpy="0 0 0"/>
     <mass value="${second_link_mass}" />
     <inertia ixx="${second_link_inertia_xx}" iyy="${second_link_inertia_yy}" izz="${second_link_inertia_zz}" ixy="0" ixz="0" iyz="0" />
   </inertial>
@@ -178,7 +181,7 @@
 </link>
 
 <!--Joints-->
-<joint name="anchor" type="floating">
+<joint name="anchor" type="fixed">
   <parent link="world"/>
   <child link="first_link"/>
   <origin xyz="0 0 0.55" rpy="0 0 0"/>

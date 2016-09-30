@@ -43,7 +43,7 @@
               <kp>1000000</kp>
               <kd>100</kd>
               <max_vel>1<max_vel>
-              <min_depth>0.000015</mid_depth>
+              <min_depth>0.000015</min_depth>
             </ode>
           </contact>
           <friction>

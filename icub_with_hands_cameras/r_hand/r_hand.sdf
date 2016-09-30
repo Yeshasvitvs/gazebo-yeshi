@@ -58,7 +58,7 @@
             <restitution_coefficient>0.01</restitution_coefficient>
             <threshold>100</threshold>
           </bounce>
-        </surface>``
+        </surface>
       </collision>
       <visual name='base_link_fixed_joint_lump__rindexbase_visual_1'>
         <pose frame=''>0.01225 -0.0643 0.027 -1.4749 0.017507 -1.57079</pose>

@@ -211,9 +211,9 @@
         </geometry>
         <material>
           <script>
-            <uri>model://2r_manipulator_scaled_down/materials/scripts/marker0.material</uri>
+            <uri>model://2r_manipulator_scaled_down/materials/scripts/marker4.material</uri>
             <uri>model://2r_manipulator_scaled_down/materials/textures</uri>
-            <name>myMarker0/Image</name>
+            <name>myMarker4</name>
           </script>
         </material>
       </visual>
@@ -375,9 +375,9 @@
         </geometry>
         <material>
           <script>
-            <uri>model://2r_manipulator_scaled_down/materials/scripts/marker1.material</uri>
+            <uri>model://2r_manipulator_scaled_down/materials/scripts/marker5.material</uri>
             <uri>model://2r_manipulator_scaled_down/materials/textures</uri>
-            <name>myMarker1/Image</name>
+            <name>myMarker5</name>
           </script>
         </material>
       </visual>

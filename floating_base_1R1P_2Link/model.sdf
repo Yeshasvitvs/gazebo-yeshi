@@ -39,6 +39,23 @@
           </box>
         </geometry>
       </collision>
+      <collision name='first_link_collision_3'>
+        <pose frame=''>0 0.275 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='first_link_collision_4'>
+        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+      </collision>
       <visual name='first_link_visual'>
         <pose frame=''>0 0 -0.0125 0 -0 0</pose>
         <geometry>
@@ -82,6 +99,55 @@
           </script>
         </material>
       </visual>
+
+      <visual name='first_link_dummy'>
+        <pose frame=''>0 0.15 0.025 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.00001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://floating_base_1R1P_2Link/materials/scripts/marker1.material</uri>
+            <uri>model://floating_base_1R1P_2Link/materials/textures</uri>
+            <name>myMarker1</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='first_link_visual_3'>
+        <pose frame=''>0 0.275 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='first_link_visual_4'>
+        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+
+
     </link>
     <joint name='anchor' type='revolute'>
       <child>first_link</child>
@@ -191,7 +257,7 @@
         <xyz>0 0 1</xyz>
         <limit>
           <lower>0</lower>
-          <upper>1.57</upper>
+          <upper>0.785</upper>
           <effort>30</effort>
           <velocity>1</velocity>
         </limit>
@@ -224,11 +290,28 @@
           </box>
         </geometry>
       </collision>
+      <collision name='second_link_collision_1'>
+        <pose frame=''>0 0.275 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='second_link_collision_2'>
+        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+      </collision>
       <visual name='second_link_visual'>
         <pose frame=''>0 0.15 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.05 0.2 0.05</size>
+            <size>0.05 0.2 0.052</size>
           </box>
         </geometry>
         <material>
@@ -238,6 +321,53 @@
           </script>
         </material>
       </visual>
+
+      <visual name='second_link_dummy'>
+        <pose frame=''>0 0.15 0.026 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.04 0.04 0.00001</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://floating_base_1R1P_2Link/materials/scripts/marker2.material</uri>
+            <uri>model://floating_base_1R1P_2Link/materials/textures</uri>
+            <name>myMarker2</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='second_link_visual_1'>
+        <pose frame=''>0 0.275 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Red</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='second_link_visual_2'>
+        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+
     </link>
     <joint name='second_joint' type='prismatic'>
       <child>second_link</child>
@@ -246,7 +376,7 @@
         <xyz>-0.950859 0.309623 0</xyz>
         <limit>
           <lower>0</lower>
-          <upper>0.2</upper>
+          <upper>0.07</upper>
           <effort>30</effort>
           <velocity>1</velocity>
         </limit>

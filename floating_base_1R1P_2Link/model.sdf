@@ -371,8 +371,8 @@
           </script>
         </material>
       </visual>
-
     </link>
+
     <joint name='second_joint' type='prismatic'>
       <child>second_link</child>
       <parent>middle_link</parent>
@@ -391,5 +391,21 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
+
+    <!--plugin name="hand_of_god" filename="libgazebo_ros_hand_of_god.so">
+  </plugin-->
+
+
+    <!--gazebo reference="first_link">
+      <plugin name="fake_hand_of_god" filename="libgazebo_ros_hand_of_god.so">
+      </plugin>
+    </gazebo-->
+
+    <!--Gazebo Yarp Plugin-->
+    <plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
+      <yarpConfigurationFile>model://floating_base_1R1P_2Link/conf/gazebo_controlboard.ini</yarpConfigurationFile>
+      <initialConfiguration>0.0 0.0 0.0</initialConfiguration>
+    </plugin>
+
   </model>
 </sdf>

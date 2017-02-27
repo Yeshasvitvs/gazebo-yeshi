@@ -1,0 +1,1131 @@
+<sdf version='1.6'>
+<static>0</static>
+  <model name='l_hand_mine'>
+  
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 1 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision'>
+        <pose frame=''>0.016 -0.0625 1 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_palm.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_1'>
+        <pose frame=''>-0.0018 -0.027 0.99625 -1.4749 -0.072507 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_indexbase.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_2'>
+        <pose frame=''>0.01225 -0.075498 0.972741 0.0959 0.017493 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ail0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_3'>
+        <pose frame=''>0.011 -0.0653 0.99 -1.5708 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_middlebase.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_4'>
+        <pose frame=''>0.011 -0.0803 0.99 0 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ml0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_5'>
+        <pose frame=''>0.01175 -0.06415 1.0059 -1.6581 -0.008693 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ringbase.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_6'>
+        <pose frame=''>0.01175 -0.078949 1.00603 -0.0873 -0.008693 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ril0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__l_hand_base_link_collision_7'>
+        <pose frame=''>0.0135 -0.077048 1.02501 -0.0873 -0.017493 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_lil0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual'>
+        <pose frame=''>0.016 -0.0625 1 1.5708 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_palm.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_1'>
+        <pose frame=''>-0.0018 -0.027 0.99625 -1.4749 -0.072507 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_indexbase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_2'>
+        <pose frame=''>0.01225 -0.075498 0.972741 0.0959 0.017493 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ail0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_3'>
+        <pose frame=''>0.011 -0.0653 0.99 -1.5708 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_middlebase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_4'>
+        <pose frame=''>0.011 -0.0803 0.99 0 7e-06 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ml0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_5'>
+        <pose frame=''>0.01175 -0.06415 1.0059 -1.6581 -0.008693 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ringbase.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_6'>
+        <pose frame=''>0.01175 -0.078949 1.00603 -0.0873 -0.008693 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ril0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__l_hand_base_link_visual_7'>
+        <pose frame=''>0.0135 -0.077048 1.02501 -0.0873 -0.017493 -1.57079</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_lil0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name='l_ai_dummy'>
+      <pose frame=''>0.01225 -0.0643 0.973 -1.4749 -0.072507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='l_aij6' type='revolute'>
+      <child>l_ai_dummy</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>-6e-06 0.997373 -0.072444</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ail1'>
+      <pose frame=''>0.01225 -0.076269 0.973869 0.0959 -0.072507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ail1_collision'>
+        <pose frame=''>0.0259 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ail1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ail1_visual'>
+        <pose frame=''>0.0259 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ail1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_aij3' type='revolute'>
+      <child>l_ail1</child>
+      <parent>l_ai_dummy</parent>
+      <axis>
+        <xyz>-0.112632 0.167148 0.979477</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ail2'>
+      <pose frame=''>0.01225 -0.1021 0.975746 0.0959 -0.072507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ail2_collision'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ail2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ail2_visual'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ail2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_aij4' type='revolute'>
+      <child>l_ail2</child>
+      <parent>l_ail1</parent>
+      <axis>
+        <xyz>-0.112632 0.167148 0.979477</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ail3'>
+      <pose frame=''>0.01225 -0.124043 0.977339 0.0959 -0.072507 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ail3_collision'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ail3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ail3_visual'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ail3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_aij5' type='revolute'>
+      <child>l_ail3</child>
+      <parent>l_ail2</parent>
+      <axis>
+        <xyz>-0.112632 0.167148 0.979477</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_li_dummy'>
+      <pose frame=''>0.0135 -0.06225 1.02475 -1.6581 -0.017493 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='l_lij6' type='revolute'>
+      <child>l_li_dummy</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>-6e-06 0.999847 -0.017492</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_lil1'>
+      <pose frame=''>0.0135 -0.077048 1.02501 -0.0873 -0.017493 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_lil1_collision'>
+        <pose frame=''>0.0218 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_lil1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_lil1_visual'>
+        <pose frame=''>0.0218 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_lil1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_lij3' type='revolute'>
+      <child>l_lil1</child>
+      <parent>l_li_dummy</parent>
+      <axis>
+        <xyz>0.104204 -0.069845 0.9921</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_lil2'>
+      <pose frame=''>0.0135 -0.098844 1.02539 -0.0873 -0.017493 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_lil2_collision'>
+        <pose frame=''>0.019 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_lil2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_lil2_visual'>
+        <pose frame=''>0.019 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_lil2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_lij4' type='revolute'>
+      <child>l_lil2</child>
+      <parent>l_lil1</parent>
+      <axis>
+        <xyz>0.104204 -0.069845 0.9921</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_lil3'>
+      <pose frame=''>0.0135 -0.117841 1.02572 1.4835 -0.017493 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_lil3_collision'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_lil3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_lil3_visual'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_lil3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_lij5' type='revolute'>
+      <child>l_lil3</child>
+      <parent>l_lil2</parent>
+      <axis>
+        <xyz>-0.990726 -0.085359 0.105709</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ml_dummy'>
+      <pose frame=''>0.011 -0.0653 0.99 -1.5708 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='l_mj6' type='revolute'>
+      <child>l_ml_dummy</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>-6e-06 1 7e-06</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ml1'>
+      <pose frame=''>0.011 -0.0803 0.99 0 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ml1_collision'>
+        <pose frame=''>0.0285 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ml1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ml1_visual'>
+        <pose frame=''>0.0285 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ml1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_mj3' type='revolute'>
+      <child>l_ml1</child>
+      <parent>l_ml_dummy</parent>
+      <axis>
+        <xyz>-7e-06 -7e-06 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ml2'>
+      <pose frame=''>0.011 -0.1088 0.99 0 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ml2_collision'>
+        <pose frame=''>0.024 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ml2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ml2_visual'>
+        <pose frame=''>0.024 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ml2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_mj4' type='revolute'>
+      <child>l_ml2</child>
+      <parent>l_ml1</parent>
+      <axis>
+        <xyz>-7e-06 -7e-06 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ml3'>
+      <pose frame=''>0.011 -0.1328 0.99 1.5708 7e-06 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ml3_collision'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ml3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ml3_visual'>
+        <pose frame=''>0.0168 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ml3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_mj5' type='revolute'>
+      <child>l_ml3</child>
+      <parent>l_ml2</parent>
+      <axis>
+        <xyz>-1 -6e-06 -1.1e-05</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ril_dummy'>
+      <pose frame=''>0.01175 -0.06415 1.0059 -1.6581 -0.008693 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='l_rij6' type='revolute'>
+      <child>l_ril_dummy</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>6e-06 -0.999962 0.008693</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ril1'>
+      <pose frame=''>0.01175 -0.078949 1.00603 -0.0873 -0.008693 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ril1_collision'>
+        <pose frame=''>0.0259 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ril1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ril1_visual'>
+        <pose frame=''>0.0259 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ril1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_rij3' type='revolute'>
+      <child>l_ril1</child>
+      <parent>l_ril_dummy</parent>
+      <axis>
+        <xyz>0.095481 -0.078565 0.992326</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ril2'>
+      <pose frame=''>0.01175 -0.104848 1.00625 -0.0873 -0.008693 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ril2_collision'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ril2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ril2_visual'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ril2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_rij4' type='revolute'>
+      <child>l_ril2</child>
+      <parent>l_ril1</parent>
+      <axis>
+        <xyz>0.095481 -0.078565 0.992326</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_ril3'>
+      <pose frame=''>0.01175 -0.126848 1.00645 1.4835 -0.008693 -1.57079</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_ril3_collision'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_ril3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_ril3_visual'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_ril3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_rij5' type='revolute'>
+      <child>l_ril3</child>
+      <parent>l_ril2</parent>
+      <axis>
+        <xyz>-0.991605 -0.086362 0.096232</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_tl0'>
+      <pose frame=''>0.021 -0.0386 0.98765 -3.063 1.07329 1.5708</pose>
+      <inertial>
+        <pose frame=''>0.021 -0.0386 -0.01235 -3.063 1.07329 -1.5708</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_tl0_collision'>
+        <pose frame=''>0 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_tl0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='l_tl0_collision_1'>
+        <pose frame=''>0.021 0 -0.0056 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_tl1.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_tl0_visual'>
+        <pose frame=''>0 0 0 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_tl0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='l_tl0_visual_1'>
+        <pose frame=''>0.021 0 -0.0056 -1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_tl1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_tj2' type='revolute'>
+      <child>l_tl0</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>-0.910711 -0.393824 -0.12453</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_tl2'>
+      <pose frame=''>0.02144 -0.023672 0.97186 -3.063 1.07329 1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_tl2_collision'>
+        <pose frame=''>0.026 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_tl2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_tl2_visual'>
+        <pose frame=''>0.026 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_tl2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_tj4' type='revolute'>
+      <child>l_tl2</child>
+      <parent>l_tl0</parent>
+      <axis>
+        <xyz>0.071721 -0.447701 0.891303</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_tl3'>
+      <pose frame=''>0.02144 -0.011264 0.949012 -3.063 1.07329 1.5708</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_tl3_collision'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_tl3.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_tl3_visual'>
+        <pose frame=''>0.022 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_tl3.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_tj5' type='revolute'>
+      <child>l_tl3</child>
+      <parent>l_tl2</parent>
+      <axis>
+        <xyz>0.071721 -0.447701 0.891303</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='l_tl4'>
+      <pose frame=''>0.02144 -0.000765 0.929679 -3.063 1.07329 1.5708</pose>
+      <inertial>
+        <pose frame=''>0.026583 -0.071915 -0.072776 1.64938 1.07329 -1.5708</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1.12e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1.12e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.12e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='l_tl4_collision'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/collision/l_hand/l_tl4.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='l_tl4_visual'>
+        <pose frame=''>0.0168 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/yeshi/icub-gazebo/icub/meshes/visual/l_hand/l_tl4.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_tj6' type='revolute'>
+      <child>l_tl4</child>
+      <parent>l_tl3</parent>
+      <axis>
+        <xyz>0.071721 -0.447701 0.891303</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.5708</upper>
+          <effort>10</effort>
+          <velocity>0.5</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>

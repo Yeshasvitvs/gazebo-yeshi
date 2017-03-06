@@ -40,23 +40,6 @@
           </box>
         </geometry>
       </collision>
-      <collision name='first_link_collision_4'>
-        <pose frame=''>0 0.275 0 0 0 0</pose>
-        <geometry>
-          <box>
-            <size>0.05 0.05 0.002</size>
-          </box>
-        </geometry>
-      </collision>
-      <collision name='first_link_collision_5'>
-        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.1</length>
-            <radius>0.01</radius>
-          </cylinder>
-        </geometry>
-      </collision>
       <visual name='first_link_visual'>
         <pose frame=''>0 0 -0.0125 0 -0 0</pose>
         <geometry>
@@ -116,40 +99,8 @@
           </script>
         </material>
       </visual>
-
-      <visual name='first_link_visual_4'>
-        <pose frame=''>0 0.275 0 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.05 0.05 0.002</size>
-          </box>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/RedTransparentOverlay</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-
-      <visual name='first_link_visual_5'>
-        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.1</length>
-            <radius>0.01</radius>
-          </cylinder>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Black</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-
-
     </link>
+
     <!--joint name='anchor' type='revolute'>
       <child>first_link</child>
       <parent>world</parent>
@@ -168,6 +119,85 @@
         <xyz>0 0 1</xyz>
       </axis>
     </joint!-->
+
+    <link name='first_link_handle'>
+      <gravity>0</gravity>
+      <pose frame=''>0 0.275 0.55 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='first_link_handle_collision'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='first_link_handle_collision_1'>
+        <pose frame=''>0 0 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='first_link_handle_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/RedTransparentOverlay</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='first_link_handle_visual_1'>
+        <pose frame=''>0 0 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='first_link_handle_joint' type='fixed'>
+      <pose frame=''>0 0 0.0 0 -0 0</pose>
+      <child>first_link_handle</child>
+      <parent>first_link</parent>
+      <axis>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 0</xyz>
+      </axis>
+    </joint>
+
     <link name='middle_link'>
       <gravity>0</gravity>
       <pose frame=''>0 0 0.55 0 -0 1.256</pose>
@@ -293,23 +323,6 @@
           </box>
         </geometry>
       </collision>
-      <collision name='second_link_collision_2'>
-        <pose frame=''>0 0.275 0 0 0 0</pose>
-        <geometry>
-          <box>
-            <size>0.05 0.05 0.002</size>
-          </box>
-        </geometry>
-      </collision>
-      <collision name='second_link_collision_3'>
-        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.1</length>
-            <radius>0.01</radius>
-          </cylinder>
-        </geometry>
-      </collision>
       <visual name='second_link_visual'>
         <pose frame=''>0 0.15 0 0 -0 0</pose>
         <geometry>
@@ -324,7 +337,6 @@
           </script>
         </material>
       </visual>
-
       <visual name='second_link_dummy'>
         <pose frame=''>0 0.15 0.0275 0 -0 0</pose>
         <geometry>
@@ -340,39 +352,7 @@
           </script>
         </material>
       </visual>
-
-      <visual name='second_link_visual_2'>
-        <pose frame=''>0 0.275 0 0 -0 0</pose>
-        <geometry>
-          <box>
-            <size>0.05 0.05 0.002</size>
-          </box>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/RedTransparentOverlay</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-
-      <visual name='second_link_visual_3'>
-        <pose frame=''>0 0.275 0.045 0 -0 0</pose>
-        <geometry>
-          <cylinder>
-            <length>0.1</length>
-            <radius>0.01</radius>
-          </cylinder>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Black</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
     </link>
-
     <joint name='second_joint' type='prismatic'>
       <child>second_link</child>
       <parent>middle_link</parent>
@@ -391,21 +371,106 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
+    <link name='second_link_handle'>
+      <gravity>0</gravity>
+      <pose frame=''>-0.261 0.085 0.55 0 -0 1.256</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.0001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='second_link_handle_collision'>
+        <pose frame=''>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='second_link_handle_collision_1'>
+        <pose frame=''>0 0 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='second_link_handle_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/RedTransparentOverlay</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='second_link_handle_visual_1'>
+        <pose frame=''>0 0 0.045 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='second_link_handle_joint' type='fixed'>
+      <pose frame=''>0 0 0.0 0 -0 0</pose>
+      <child>second_link_handle</child>
+      <parent>second_link</parent>
+      <axis>
+        <dynamics>
+          <damping>0</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+        <xyz>0 0 0</xyz>
+      </axis>
+    </joint>
 
-    <!--plugin name="hand_of_god" filename="libgazebo_ros_hand_of_god.so">
-  </plugin-->
-
-
-    <!--gazebo reference="first_link">
-      <plugin name="fake_hand_of_god" filename="libgazebo_ros_hand_of_god.so">
-      </plugin>
-    </gazebo-->
+      <!--gazebo>
+        <plugin name="hand_of_god" filename="libgazebo_ros_hand_of_god.so">
+          <linkName>second_link</linkName>
+          <frameId>hog</frameId>
+          <kl>200</kl>
+          <ka>200</ka>
+        </plugin>
+      </gazebo-->
 
     <!--Gazebo Yarp Plugin-->
-    <plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
+    <!--plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
       <yarpConfigurationFile>model://floating_base_1R1P_2Link/conf/gazebo_controlboard.ini</yarpConfigurationFile>
       <initialConfiguration>0.0 0.0 0.0</initialConfiguration>
-    </plugin>
+    </plugin-->
+
+    <!--plugin name="world_interface" filename="libgazebo_yarp_worldinterface.so">
+      <yarpConfigurationFile>model://floating_base_1R1P_2Link/conf/gazebo_worldinterface.ini</yarpConfigurationFile>
+    </plugin-->
+
+    <!--plugin name="object_attach" filename="libgazebo_yarp_objectattacher.so">
+      <yarpConfigurationFile>model://floating_base_1R1P_2Link/conf/gazebo_objectattacher.ini</yarpConfigurationFile>
+    </plugin-->
 
   </model>
 </sdf>

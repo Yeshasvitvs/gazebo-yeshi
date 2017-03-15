@@ -197,6 +197,14 @@
         <use_parent_model_frame>1</use_parent_model_frame>
         <xyz>0 0 0</xyz>
       </axis>
+      <sensor name='first_link_handle_ft' type='force_torque'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin name='first_link_handle_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
+          <yarpConfigurationFile>model://floating_base_1R1P_2Link/conf/first_link_handle_ft.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </joint>
 
     <link name='middle_link'>
@@ -448,6 +456,14 @@
         <use_parent_model_frame>1</use_parent_model_frame>
         <xyz>0 0 0</xyz>
       </axis>
+      <sensor name='second_link_handle_ft' type='force_torque'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <pose>0 0 0 0 0 0</pose>
+        <plugin name='second_link_handle_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
+          <yarpConfigurationFile>model://floating_base_1R1P_2Link/conf/second_link_handle_ft.ini</yarpConfigurationFile>
+        </plugin>
+      </sensor>
     </joint>
 
       <!--gazebo>

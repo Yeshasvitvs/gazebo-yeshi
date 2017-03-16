@@ -1,0 +1,15 @@
+material myMarker1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture 1.jpg
+      }
+
+      }
+    }
+  }
+}

@@ -317,7 +317,7 @@
         <limit>
           <lower>0</lower>
           <!--upper>1.1775</upper-->
-          <upper>0</upper>
+          <upper>3.14</upper>
           <effort>30</effort>
           <velocity>1</velocity>
         </limit>
@@ -388,7 +388,7 @@
         </material>
       </visual>
       <visual name='second_link_dummy'>
-        <pose frame=''>0 0.15 0.0275 0 -0 0</pose>
+        <pose frame=''>0 0.15 0.0275 0 -0 -1.57</pose>
         <geometry>
           <box>
             <size>0.05 0.05 0.00001</size>
@@ -410,7 +410,7 @@
         <xyz>-0.950859 0.309623 0</xyz>
         <limit>
           <lower>0</lower>
-          <upper>0.05</upper>
+          <upper>0.07</upper>
           <!--upper>0</upper-->
           <effort>30</effort>
           <velocity>1</velocity>

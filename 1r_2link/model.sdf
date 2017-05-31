@@ -386,7 +386,5 @@
       <yarpConfigurationFile>model://1r_2link/conf/gazebo_accesslinkpose.ini</yarpConfigurationFile>
     </plugin>
 
-
-
   </model>
 </sdf>

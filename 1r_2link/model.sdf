@@ -8,10 +8,10 @@
         <mass>10</mass>
         <inertia>
           <ixx>0.00001</ixx>
-          <ixy>0.00001</ixy>
-          <ixz>0.00001</ixz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
           <iyy>0.00001</iyy>
-          <iyz>0.00001</iyz>
+          <iyz>0</iyz>
           <izz>0.00001</izz>
         </inertia>
       </inertial>
@@ -52,10 +52,10 @@
         <mass>10</mass>
         <inertia>
           <ixx>0.00001</ixx>
-          <ixy>0.00001</ixy>
-          <ixz>0.00001</ixz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
           <iyy>0.00001</iyy>
-          <iyz>0.00001</iyz>
+          <iyz>0</iyz>
           <izz>0.00001</izz>
         </inertia>
       </inertial>
@@ -323,10 +323,10 @@
         <mass>1</mass>
         <inertia>
           <ixx>0.00001</ixx>
-          <ixy>0.00001</ixy>
-          <ixz>0.00001</ixz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
           <iyy>0.00001</iyy>
-          <iyz>0.00001</iyz>
+          <iyz>0</iyz>
           <izz>0.00001</izz>
         </inertia>
       </inertial>

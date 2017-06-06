@@ -241,8 +241,8 @@
           <limit>
             <lower>0</lower>
             <upper>0.15</upper>
-            <!--effort>30</effort-->
-            <!--velocity>10</velocity-->
+            <effort>30</effort>
+            <velocity>10</velocity>
           </limit>
           <!--dynamics>
             <spring_reference>0</spring_reference>

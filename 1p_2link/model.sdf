@@ -1,4 +1,4 @@
-<sdf version='1.5'>
+<sdf version='1.4'>
   <model name='1p_2link'>
     <self_collide>true</self_collide>
 
@@ -43,13 +43,13 @@
       </visual>
     </link>
 
-    <joint name='anchor' type='fixed'>
+    <!--joint name='anchor' type='fixed'>
       <child>base_link</child>
       <parent>world</parent>
       <axis>
         <xyz>0 0 0</xyz>
       </axis>
-    </joint>
+    </joint-->
 
     <link name='base_ft_link'>
       <gravity>0</gravity>
@@ -91,6 +91,14 @@
         </material>
       </visual>
     </link>
+
+    <joint name='anchor' type='fixed'>
+      <child>base_ft_link</child>
+      <parent>world</parent>
+      <axis>
+        <xyz>0 0 0</xyz>
+      </axis>
+    </joint>
 
     <joint name='base_ft_joint' type='fixed'>
       <child>base_ft_link</child>
@@ -151,13 +159,15 @@
         <xyz>0 0 0</xyz>
       </axis>
       <sensor name='first_link_ft' type='force_torque'>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>parent_to_child</measure_direction>
+        </force_torque>
         <always_on>1</always_on>
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin name='first_link_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
           <yarpConfigurationFile>model://1p_2link/conf/first_link_ft.ini</yarpConfigurationFile>
-          <frame>child</frame>
-          <measured_direction>child_to_parent</measured_direction>
         </plugin>
       </sensor>
     </joint>
@@ -303,13 +313,15 @@
           <xyz>0 0 0</xyz>
         </axis>
         <sensor name='second_link_ft' type='force_torque'>
+          <force_torque>
+            <frame>child</frame>
+            <measure_direction>child_to_parent</measure_direction>
+          </force_torque>
           <always_on>1</always_on>
           <update_rate>100</update_rate>
           <pose>0 0 0 0 0 0</pose>
           <plugin name='second_link_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
             <yarpConfigurationFile>model://1p_2link/conf/second_link_ft.ini</yarpConfigurationFile>
-            <frame>child</frame>
-            <measured_direction>child_to_parent</measured_direction>
           </plugin>
         </sensor>
       </joint>

@@ -1,58 +1,10 @@
 <sdf version='1.6'>
   <model name='1r_2link'>
     <self_collide>true</self_collide>
-    <link name='base_link'>
+
+    <link name='first_link_handle'>
       <gravity>0</gravity>
       <pose frame=''>0 0 0.55 0 0 0</pose>
-      <inertial>
-        <mass>1</mass>
-        <inertia>
-          <ixx>0.0076</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.0004</iyy>
-          <iyz>0</iyz>
-          <izz>0.0076</izz>
-        </inertia>
-      </inertial>
-      <collision name='base_link_collision'>
-        <geometry>
-          <box>
-            <size>0.0499 0.3 0.05</size>
-          </box>
-        </geometry>
-        <surface>
-          <contact>
-            <collide_bitmask>0x03</collide_bitmask>
-          </contact>
-        </surface>
-      </collision>
-      <visual name='base_link_visual'>
-        <geometry>
-          <box>
-            <size>0.05 0.3 0.05</size>
-          </box>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/FlatBlack</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-      </visual>
-    </link>
-
-    <joint name='anchor' type='fixed'>
-      <child>base_link</child>
-      <parent>world</parent>
-      <axis>
-        <xyz>0 0 0</xyz>
-      </axis>
-    </joint>
-
-    <link name='base_ft_link'>
-      <gravity>0</gravity>
-      <pose frame=''>0.025 0 0.55 0 0 0</pose>
       <inertial>
         <mass>1</mass>
         <inertia>
@@ -64,36 +16,39 @@
           <izz>0.00001</izz>
         </inertia>
       </inertial>
-      <collision name='base_ft_collision'>
+      <collision name='first_link_handle_collision'>
+        <pose frame=''>0 0 0 0 0 0</pose>
         <geometry>
-          <box>
-            <size>0.05 0.05 0.05</size>
-          </box>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
         </geometry>
         <surface>
           <contact>
-            <collide_bitmask>0x00</collide_bitmask>
+            <collide_bitmask>0x03</collide_bitmask>
           </contact>
         </surface>
       </collision>
-      <visual name='base_ft_visual'>
+      <visual name='first_link_handle_visual'>
         <geometry>
-          <box>
-            <size>0.05 0.05 0.05</size>
-          </box>
+          <cylinder>
+            <length>0.1</length>
+            <radius>0.01</radius>
+          </cylinder>
         </geometry>
         <material>
           <script>
-            <name>Gazebo/Red</name>
+            <name>Gazebo/Black</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
 
-    <joint name='base_ft_joint' type='fixed'>
-      <child>base_ft_link</child>
-      <parent>base_link</parent>
+    <joint name='anchor' type='fixed'>
+      <child>first_link_handle</child>
+      <parent>world</parent>
       <axis>
         <xyz>0 0 0</xyz>
       </axis>
@@ -114,7 +69,7 @@
           <izz>0.0034</izz>
         </inertia>
       </inertial>
-      <collision name='first_link_collision'>
+      <collision name='first_link_collision_1'>
         <pose frame=''>0.1 0 0 0 0 0</pose>
         <geometry>
           <box>
@@ -127,7 +82,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='first_link_collision_1'>
+      <collision name='first_link_collision_2'>
         <pose frame=''>0.2 0 -0.0125 0 0 0</pose>
         <geometry>
           <box>
@@ -140,7 +95,7 @@
           </contact>
         </surface>
       </collision>
-      <collision name='fisrt_link_collision_2'>
+      <collision name='fisrt_link_collision_3'>
         <pose frame=''>0.25 0 -0.0125 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -155,6 +110,20 @@
         </surface>
       </collision>
       <visual name='first_link_visual'>
+        <pose frame=''>-0.025 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.0002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/RedTransparentOverlay</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='first_link_visual_1'>
         <pose frame=''>0.1 0 0 0 0 0</pose>
         <geometry>
           <box>
@@ -168,7 +137,7 @@
           </script>
         </material>
       </visual>
-      <visual name='first_link_visual_1'>
+      <visual name='first_link_visual_2'>
         <pose frame=''>0.2 0 -0.0125 0 0 0</pose>
         <geometry>
           <box>
@@ -182,7 +151,7 @@
           </script>
         </material>
       </visual>
-      <visual name='first_link_visual_2'>
+      <visual name='first_link_visual_3'>
         <pose frame=''>0.25 0 -0.0125 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -199,20 +168,23 @@
       </visual>
     </link>
 
-    <joint name='first_link_ft_joint' type='fixed'>
+    <joint name='first_link_handle_ft_joint' type='fixed'>
       <child>first_link</child>
-      <parent>base_ft_link</parent>
+      <parent>first_link_handle</parent>
       <axis>
         <xyz>0 0 0</xyz>
       </axis>
       <sensor name='first_link_ft' type='force_torque'>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>parent_to_child</measure_direction>
+        </force_torque>
         <always_on>1</always_on>
+        <visualize>1</visualize>
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin name='first_link_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>
           <yarpConfigurationFile>model://1r_2link/conf/first_link_ft.ini</yarpConfigurationFile>
-          <frame>child</frame>
-          <measured_direction>child_to_parent</measured_direction>
         </plugin>
       </sensor>
     </joint>
@@ -407,14 +379,19 @@
       </visual>
     </link>
 
-    <joint name='handle_link_ft_joint' type='fixed'>
+    <joint name='second_link_handle_ft_joint' type='fixed'>
       <child>second_link_handle</child>
       <parent>second_link</parent>
       <axis>
         <xyz>0 0 0</xyz>
       </axis>
       <sensor name='second_link_ft' type='force_torque'>
+        <force_torque>
+          <frame>child</frame>
+          <measure_direction>child_to_parent</measure_direction>
+        </force_torque>
         <always_on>1</always_on>
+        <visualize>1</visualize>
         <update_rate>100</update_rate>
         <pose>0 0 0 0 0 0</pose>
         <plugin name='second_link_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>

@@ -1,7 +1,6 @@
 <sdf version='1.6'>
   <model name='1r_2link'>
     <self_collide>true</self_collide>
-
     <link name='first_link_handle'>
       <gravity>0</gravity>
       <pose frame=''>0 0 0.55 0 0 0</pose>
@@ -191,7 +190,7 @@
 
     <link name='second_link'>
       <gravity>0</gravity>
-      <pose>0.275 0 0.55 0 0 1.256</pose>
+      <pose>0.275 0 0.55 0 0 -2</pose>
       <inertial>
         <pose>0.15 0 0 0 0 0</pose>
         <mass>1</mass>
@@ -322,8 +321,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-3.14</lower>
-          <upper>0</upper>
+          <lower>0</lower>
+          <upper>3.14</upper>
           <effort>30</effort>
           <velocity>10</velocity>
         </limit>
@@ -337,7 +336,7 @@
 
     <link name='second_link_handle'>
       <gravity>0</gravity>
-      <pose frame=''>0.3595 0.2615 0.55 0 0 1.256</pose>
+      <pose frame=''>0.1606 -0.2501 0.55 0 0 -2</pose>
       <inertial>
         <mass>1</mass>
         <inertia>

@@ -1,4 +1,4 @@
-<sdf version='1.6'>
+<sdf version='1.5'>
   <model name='1r_2link'>
     <self_collide>true</self_collide>
     <link name='first_link_handle'>

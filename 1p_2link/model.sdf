@@ -6,14 +6,14 @@
       <gravity>0</gravity>
       <pose frame=''>0 0 0.55 0 0 0</pose>
       <inertial>
-        <mass>1</mass>
+        <mass>0.1</mass>
         <inertia>
-          <ixx>0.00001</ixx>
+          <ixx>0.000077233</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00001</iyy>
+          <iyy>0.000077233</iyy>
           <iyz>0</iyz>
-          <izz>0.00001</izz>
+          <izz>0.00000405</izz>
         </inertia>
       </inertial>
       <collision name='first_link_handle_collision'>
@@ -227,14 +227,14 @@
         <gravity>0</gravity>
         <pose frame=''>0.25 0 0.55 0 0 0</pose>
         <inertial>
-          <mass>1</mass>
+          <mass>0.1</mass>
           <inertia>
-            <ixx>0.00001</ixx>
+            <ixx>0.00007723</ixx>
             <ixy>0</ixy>
             <ixz>0</ixz>
-            <iyy>0.00001</iyy>
+            <iyy>0.00007723</iyy>
             <iyz>0</iyz>
-            <izz>0.00001</izz>
+            <izz>0.00000405</izz>
           </inertia>
         </inertial>
         <collision name='second_link_handle_collision'>
@@ -279,7 +279,6 @@
             <measure_direction>child_to_parent</measure_direction>
           </force_torque>
           <always_on>1</always_on>
-          <visualize>1</visualize>
           <update_rate>100</update_rate>
           <pose>0 0 0 0 0 0</pose>
           <plugin name='second_link_ft_plugin' filename='libgazebo_yarp_forcetorque.so'>

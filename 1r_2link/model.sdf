@@ -2,7 +2,7 @@
   <model name='1r_2link'>
     <self_collide>false</self_collide>
     <link name='first_link_handle'>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <pose frame=''>0 0 0.55 0 0 0</pose>
       <inertial>
         <mass>0.1</mass>
@@ -45,16 +45,16 @@
       </visual>
     </link>
 
-    <joint name='anchor' type='fixed'>
+    <!--joint name='anchor' type='fixed'>
       <child>first_link_handle</child>
       <parent>world</parent>
       <axis>
         <xyz>0 0 0</xyz>
       </axis>
-    </joint>
+    </joint-->
 
     <link name='first_link'>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <pose>0.025 0 0.55 0 0 0</pose>
       <inertial>
         <pose>0.1 0 0 0 0 0</pose>
@@ -189,7 +189,7 @@
     </joint>
 
     <link name='second_link'>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <pose>0.275 0 0.55 0 0 -2</pose>
       <inertial>
         <pose>0.15 0 0 0 0 0</pose>
@@ -336,7 +336,7 @@
     </joint>
 
     <link name='second_link_handle'>
-      <gravity>1</gravity>
+      <gravity>0</gravity>
       <pose frame=''>0.1606 -0.2501 0.55 0 0 -2</pose>
       <inertial>
         <mass>0.1</mass>
@@ -402,10 +402,10 @@
       </sensor>
     </joint>
 
-    <plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
+    <!--plugin name="controlboard" filename="libgazebo_yarp_controlboard.so">
       <yarpConfigurationFile>model://1r_2link/conf/gazebo_controlboard.ini</yarpConfigurationFile>
       <initialConfiguration>0.0</initialConfiguration>
-    </plugin>
+    </plugin-->
 
     <!--plugin name='second_link_handle_multi_ext_wrench' filename='libgazebo_yarp_multiexternalwrench.so'>
       <robotNamefromConfigFile>model://1r_2link/conf/gazebo_1r_2link_robotname.ini</robotNamefromConfigFile>

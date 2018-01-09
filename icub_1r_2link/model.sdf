@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name="icub_1r_2link">
+
+    <include>
+      <uri>model://icub</uri>
+    </include>
+
+    <include>
+      <uri>model://1r_2link</uri>
+      <pose>.4 0.114639 0.07 0 0 -0.43</pose>
+    </include>
+
+    <joint name='first_hand_joint' type='fixed'>
+      <child>1r_2link::first_link_handle</child>
+      <parent>iCub::l_hand</parent>
+      <axis>
+        <xyz>0 0 0</xyz>
+      </axis>
+    </joint>
+
+    <!--joint name='second_hand_joint' type='fixed'>
+      <child>1r_2link::second_link_handle</child>
+      <parent>iCub::r_hand</parent>
+      <axis>
+        <xyz>0 0 0</xyz>
+      </axis>
+    </joint-->
+
+  </model>
+</sdf>
